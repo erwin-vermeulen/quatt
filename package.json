@@ -1,0 +1,19 @@
+{
+  "name": "quatt",
+  "version": "1.0.0",
+  "description": "Quatt assessment from Erwin Vermeulen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwin-vermeulen/quatt.git"
+  },
+  "author": "Erwin Vermeulen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erwin-vermeulen/quatt/issues"
+  },
+  "homepage": "https://github.com/erwin-vermeulen/quatt#readme"
+}
