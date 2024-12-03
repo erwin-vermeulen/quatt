@@ -4,7 +4,7 @@
   "description": "Quatt assessment from Erwin Vermeulen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/erwin-vermeulen/quatt/issues"
   },
-  "homepage": "https://github.com/erwin-vermeulen/quatt#readme"
+  "homepage": "https://github.com/erwin-vermeulen/quatt#readme",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "express": "^4.21.1",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
 }
