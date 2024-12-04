@@ -22,4 +22,5 @@ it as well to run the tests. I could understand if this is a big mistake, but I 
 
 ## Test execution
 You can run one of the two commands:
-1. `npm `
+1. `npm run all-tests` to execute all the tests
+2. `npm test 'full-test-name'` to run a specific test
