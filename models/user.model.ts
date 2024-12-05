@@ -6,7 +6,7 @@ export interface UserDetails {
     status: 'active' | 'inactive';
   }
 
-export interface UpdateUserDetails {
+export interface PartialUserDetails {
     id?: number;
     name?: string;
     email?: string;
