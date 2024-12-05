@@ -1,5 +1,10 @@
 import { UserDetails } from "../models";
 
+/**
+* Function to check if the user has the correct user details
+*
+* @param  {UserDetails}   responseBody   The response body containing user data
+*/
 export function checkUserDetails(responseBody: UserDetails): void {
     const bodyLength:number = Object.keys(responseBody).length
     expect(bodyLength).toEqual(5);
@@ -20,6 +25,13 @@ export function checkUserDetails(responseBody: UserDetails): void {
     expect(['active', 'inactive'], 'Unexpected status value for user ID: ' + userData.id).toContain(userData.status);
   }
 
+  /**
+  * Function to compare the response body data with test data
+  * 
+  * @param  {UserDetails}   responseBody   The response body containing user data
+  * @param  {UserDetails}   user           You can choose any user that is created in the 'user-data.ts' file
+  * @param  {Number}        userId         The user ID of the user
+  */
   export function checkUserDataForUser(responseBody: UserDetails, user: UserDetails, userId: number): void {
     const userData: UserDetails = responseBody;
     expect(userData.id).toEqual(userId);
@@ -29,6 +41,16 @@ export function checkUserDetails(responseBody: UserDetails): void {
     expect(userData.status).toEqual(user.status);
   }
 
+  /**
+  * Function to compare the response body data with any given test data
+  * 
+  * @param  {UserDetails}   responseBody   The response body containing user data
+  * @param  {Number}        userId         The user ID of the user
+  * @param  {String}        name           The name of the user
+  * @param  {String}        userId         The email of the user
+  * @param  {String}        userId         The gender of the user. Can only be male of female
+  * @param  {String}        userId         The status of the user. Can only be active or inactive
+  */
   export function checkUserData(responseBody: UserDetails, userId: number, name: string, email: string, gender: 'male' | 'female', status: 'active' | 'inactive'): void {
     const userData: UserDetails = responseBody;
     expect(userData.id).toEqual(userId);
